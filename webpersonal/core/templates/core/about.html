@@ -1,0 +1,30 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Acerca de{% endblock %}
+
+{% block background %}{% load static %}{% static 'core/img/acerca.jpg' %}{% endblock %}
+
+{% block headers %}
+<h1>Acerca de</h1>
+<span class="subheading">Biografía</span>
+{% endblock %}
+
+{% block content %}
+<div class="row"> 
+    <div class="col-lg-3 col-md-4 offset-lg-1">
+        <img class="img-fluid Profile" src="{% static 'core/img/Profile.png' %}" alt="Profile">
+
+    </div>
+    <div class="col-lg-7 col-md-8">
+        <h2 class="section-heading">Mónica Ramírez</h2>   
+        <p>Soy estudiante de Ingeniería en Redes Inteligentes y Ciberseguridad. 
+            Me apasiona la tecnología y la constante innovación en el ámbito de la ciberseguridad. 
+            Inicié mi formación académica en la preparatoria plantel Nezahualcóyotl de la UAEMex, 
+            donde surgió mi interés por las Tecnologías de la Información gracias a las optativas que elegí 
+            y al aprendizaje sobre cómo utilizarlas de manera más eficiente.</p>
+        <p>Cuento con habilidades como resolución de problemas, trabajo en equipo, comunicación asertiva 
+            y toma de decisiones. Mi enfoque es ser proactivo y creativo, buscando siempre soluciones 
+            innovadoras y eficientes. </p>
+    </div>
+</div>
+{% endblock %}
